@@ -1,0 +1,57 @@
+/*Body*/
+
+body {
+
+    background: rgb(218, 215, 206);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+p {
+
+    color:  rgb(51, 51, 51);
+
+}
+
+
+/*Header*/
+
+header h1 {
+
+    color: #1f32e0;
+
+}
+
+.job-title p {
+
+    color: rgb(218, 215, 206);
+    background: #1f32e0;
+
+}
+
+/*Main*/
+
+#high {
+
+    color: #1f32e0;
+
+}
+
+/*Footer*/
+
+footer h2 {
+
+    color: #333333;
+
+}
+
+footer ul {
+
+    background: #333333;
+
+}
+
+footer li {
+
+    color: rgb(218, 215, 206);
+
+}
