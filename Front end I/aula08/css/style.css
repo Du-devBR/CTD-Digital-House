@@ -1,0 +1,61 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*Body*/
+
+body {
+
+    background: #131313;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/*Header*/
+
+header h1 {
+
+    color: #fff;
+
+}
+
+/*Bg-img*/
+
+.media-picture img {
+
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+/*Pontuação*/
+
+.review-score {
+
+    color: #fff;
+    background: #e6bd09;
+    padding: 12px;
+
+}
+
+/*Descrição*/
+
+main h2 {
+
+    color: steelblue;
+
+}
+
+main p {
+
+    color: #bdbdbd;
+
+}
+
+main a {
+
+    color: yellow;
+
+}
