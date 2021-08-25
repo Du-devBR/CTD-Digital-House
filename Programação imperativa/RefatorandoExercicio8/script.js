@@ -15,29 +15,39 @@ function agendar(){
     if(resultadoImc > 25){
     var agendamento = confirm('Você gostaria de agendar um Nutricionista?');
     }
-    if(agendamento){
-        alert('Vamos agendar');
+    else if(resultadoImc < 24.9) {
+        alert('Muito obrigado por reliazar seu teste')
+     }
+     
+    if (agendamento){
+        confirm('Faça seu agendamentoi aqui')
+        
     }
     else {
         alert('Muito obrigado por reliazar seu teste')
      }
+     
 }
 
+
+
         function agenda(){
-            if(agendamento){
+            if(agendamento=true){
                var nome = prompt('Qual seu nome');
                var diaDaSemana = prompt('Qual o melhor dia da Semana para a Consulta');
                var horario = prompt("Qual o melhor horario?")
                var confirmar = confirm(`Sua consulta será agendada para ${diaDaSemana} as ${horario}`)
+            }
+            else if(agendamento=false){
+                alert('teste')
+            }
 
             if(confirmar){
-                alert(`Muito obrigado, sua consulta está confirmada na ${diaDaSemana} as ${horario} com a Dra. Luana Nagydai`)
+                alert(`${nome}, muito obrigado. Sua consulta está confirmada na ${diaDaSemana} as ${horario} com a Dra. Luana Nagydai`)
             } 
             else{
                 alert('Preencha novamente o dia e horario desejado')
       }
-    }
-    
 
     }
   
