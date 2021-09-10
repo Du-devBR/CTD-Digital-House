@@ -94,6 +94,27 @@
 // numerosImpar()
 // numerosPar()
 
+// 4. Programa em Javascript que calcula a média das notas de uma turma
+// Escreva um programa que pergunte ao usuário quantos alunos tem na sala dele.
+// Em seguida, através de um laço while, pede ao usuário para que entre com as notas de todos os alunos da sala, um por vez.
+// Por fim, o programa mostra a média aritmética da turma.
+
+var quantidadeDeAlunos = prompt('Quantos alunos possui na sala de aula')
+
+function calculoDaMedia(){
+    for(var contador = 0; contador < quantidadeDeAlunos; contador++){
+       var nota = quantidadeDeAlunos[contador];
+       var notaPorAluno = quantidadeDeAlunos.length;
+       var digit = prompt('nota')
+       var soma = digit + nota
+    }
+    alert(soma)
+    
+}
+calculoDaMedia()
+
+
+
 
 
 
