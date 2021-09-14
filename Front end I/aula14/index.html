@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula14</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="./img/logo.png" alt="the-best-doces">
+        </div>
+        <h1>Formulario de compra</h1>
+    </header>
+    
+    <form>
+        <h2>Prencha os campos Abaixo</h2>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id= "name" placeholder="Digite seu nome">
+        </div>
+        <div>
+            <label for="name">E-mail</label>
+            <input type="email" name="name" id= "email" placeholder="E-mail">
+        </div>
+        <div>
+            <label for="name">Telefone</label>
+            <input type="tel" name="name" id= "phone" placeholder="(11)00000-0000">
+        </div>
+        <fieldset class="localization">
+            <legend>Localização</legend>
+            <div class="Classificacao-estados">
+                <label for="state">Estado</label>
+                <select name="state" id="state">
+                    <optgroup label="Região Sul">
+                        <option value="pr">Parana</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="sc">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="es">Espirito Santo</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sp">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="df">Distrito Federal</option>
+                        <option value="rio">Goias</option>
+                        <option value="rio">Mato Grosso</option>
+                        <option value="rio">Mato Grosso do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="ac">Acre</option>
+                        <option value="rio">Amapa</option>
+                        <option value="rio">Amazonas</option>
+                        <option value="rio">Para</option>
+                        <option value="rio">Rondonia</option>
+                        <option value="rio">Roraima</option>
+                        <option value="rio">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="rio">Alagoas</option>
+                        <option value="bh">Bahia</option>
+                        <option value="rio">Ceara</option>
+                        <option value="rio">Maranhão</option>
+                        <option value="rio">Paraiba</option>
+                        <option value="rio">Pernanbuco</option>
+                        <option value="rio">Piaui</option>
+                        <option value="rio">Rio Grande do Norte</option>
+                        <option value="rio">Sergipe</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="classificacao-cidades">
+                <label for="city">Cidade</label>
+                <input type="search" list="lista-de-cidades"name="city" id="city">
+                <datalist id="lista-de-cidades">
+                    <option value="Mogi das cruzes">
+                    <option value="Campinas">
+                    <option value="São Paulo">
+                    <option value="Guarulhos">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset class="products">
+            <legend>Escolha os melhores produtos</legend>
+            <div>
+                <input type="checkbox" name="cake-choco" id="candy-products">
+                <label for="">Bolo de chocolate</label>
+                <div>
+                    <img src="./img/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cobertura de Nutela</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Pasta Americana</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Recheio de ninho</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Brigadeiro</label>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Bolo de chocolate</label>
+                <div>
+                    <img src="./img/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cobertura de Nutela</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Pasta Americana</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Recheio de ninho</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Brigadeiro</label>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Bolo de chocolate</label>
+                <div>
+                    <img src="./img/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cobertura de Nutela</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Pasta Americana</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Recheio de ninho</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Brigadeiro</label>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Bolo de chocolate</label>
+                <div>
+                    <img src="./img/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cobertura de Nutela</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Pasta Americana</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Recheio de ninho</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Brigadeiro</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="payment">
+            <legend>Forma de pagamento</legend>
+            <div>
+                <select name="" id="">
+                    <option value="">Dinheiro</option>
+                    <option value="">Debito</option>
+                    <option value="">Credito</option>
+                    <option value="">Pix</option>
+                </select>
+            </div>
+        </fieldset>
+        <button class="buy" type="submit">Comprar</button>
+        <button class="cancel" type="reset">Cancelar</button>
+    </form>
+
+  
+  
+</body>
+</html>
