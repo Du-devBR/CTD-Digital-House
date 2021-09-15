@@ -16,20 +16,43 @@ h1, h2, p, span, label, input, option, legend, button, select, ::placeholder {
 
 }
 
+body {
+
+    background-color: #E6E6E6;
+}
+
+.logo {
+
+    width: 100%;
+    background-image: linear-gradient(45deg, #7B18F5, white);
+    padding: 16px 128px 16px 0;
+    box-sizing: border-box;
+  
+
+}
+
+.logo h1 {
+
+    padding: 8px ;
+    color: white;
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 225px;
+    margin-left: 128px;
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
 form {
 
     width: 600px;
-    background-color: aquamarine;
+    background-color: #FFFFFF;
     margin: 64px auto;
     padding: 64px 32px;
     border: none;
     border-radius: 15px;
-
-}
-
-
-.logo {
-    text-align: center;
+    box-shadow: 5px 5px 5px whitesmoke;
 
 }
 
@@ -38,6 +61,8 @@ form h1 {
     text-align: center;
     font-size: 24px;
     letter-spacing: 2px;
+    font-weight: normal;
+    color: #111111;
 
 }
 
@@ -47,6 +72,7 @@ form h2 {
     font-weight: normal;
     letter-spacing: 1px;
     margin: 32px 0 16px 0;
+    color: #111111;
 
 }
 
@@ -55,6 +81,8 @@ form h2 {
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 1px;
+    color:  rgb(151, 161, 151);
+    font-weight: normal;
 
 }
 
@@ -62,16 +90,24 @@ form h2 {
 
     width: 100%;
     margin: 8px 0;
-    border: none;
+    border: solid 1px rgb(151, 171, 151) ;
     border-radius: 15px;
     padding: 5px 16px;
     box-sizing: border-box;
+    font-size: 14px;color: #111111;
 
+}
+
+#phone {
+    display: block;
+    width: 40%;
 }
 
 .localization {
 
-    margin: 32px 0;
+    margin: 64px 0 ;
+    border-bottom: solid 3px #111111;
+    padding: 16px 0 32px 0;
 }
 
 .localization legend {
@@ -80,6 +116,7 @@ form h2 {
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 16px;
+    color: #111111;
 
 }
 
@@ -87,17 +124,33 @@ form h2 {
 
     font-size: 18px;
     letter-spacing: 1px;
+    font-weight: normal;
+    color: rgb(151, 161, 151);
 
 }
 
 .localization input, select {
 
     border-radius: 15px;
-    border: none;
+    border: solid 1px rgb(151, 171, 151);
     width: 50%;
     padding: 5px 16px;
     margin: 8px 0;
+    color: rgb(151, 161, 151);
+    font-size: 14px;
 
+}
+
+.localization optgroup, option {
+
+    color: #111111;
+}
+
+.products {
+
+    margin: 64px 0 ;
+    border-bottom: solid 3px #111111;
+    padding: 16px 0 32px 0;
 }
 
 .products legend {
@@ -105,6 +158,7 @@ form h2 {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
+    color: #111111;
 
 }
 
@@ -118,7 +172,6 @@ form h2 {
 
     width: 25px;
     height: 25px;
-    position: relative;
     cursor: pointer;
     position: absolute;
 
@@ -137,15 +190,145 @@ form h2 {
 .bg-product {
 
     margin: 0 auto;
-    text-align: center;
-    width: 100px;
-    height: 90px;
+    width: 200px;
+    
+}
 
+.bg-product img {
+
+    text-align: center;
+    margin: 32px 0 16px 0;
+    width: 200px;
+    height: 100px;
+    box-shadow: 5px 10px 15px #111111;
+    
+}
+
+.products-add {
+
+    margin: 16px 0 0px 32px;
+    display: block;
+
+}
+
+.products-add input {
+
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    
+
+}
+
+.products-add label {
+
+    font-size: 12px;
+    position: relative;
+    font-weight: normal;
+    margin: 0 26px;
 }
 
 .item-1 {
 
     margin-bottom: 32px;
+    background-color: #E6E6E6;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+
+.item-2 {
+
+    margin-bottom: 32px;
+    background-color: #f3f0f0;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+
+.item-3 {
+
+    margin-bottom: 32px;
+    background-color: #E6E6E6;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+
+.item-4 {
+
+    margin-bottom: 32px;
+    background-color: #f3f0f0;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+
+.payment {
+
+    margin: 64px 0 ;
+    border-bottom: solid 3px #111111;
+    padding: 16px 0 32px 0;
+}
+
+.payment legend {
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #111111;
+    margin-bottom: 8px;
+
+}
+
+.payment select {
+
+    width: 120px;
+}
+
+button {
+
+    padding: 8px 32px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    
+
+}
+
+.buy {
+
+    border: solid 2px #7B18F5;
+    color: #7B18F5;
+    margin-right: 16px;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.buy:hover {
+
+    color: white;
+    background-color: #7B18F5;
+    border: none;
+    padding: 10px 34px;
+}
+
+.cancel {
+
+    color: rgb(151, 161, 151);
+    background-color: rgb(247, 243, 243);
+}
+
+.cancel:hover {
+
+    color: white;
+    background-color: red;
+    border: none;
+   
 }
 
 
