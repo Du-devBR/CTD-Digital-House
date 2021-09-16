@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    transform: translateX(0);
+    
+    animation-name: teste;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+/* div:hover {
+
+
+} */
+
+@keyframes teste {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translatey(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+    
+}
