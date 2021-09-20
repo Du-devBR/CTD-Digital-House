@@ -99,19 +99,37 @@
 // Em seguida, através de um laço while, pede ao usuário para que entre com as notas de todos os alunos da sala, um por vez.
 // Por fim, o programa mostra a média aritmética da turma.
 
-var quantidadeDeAlunos = prompt('Quantos alunos possui na sala de aula')
 
-function calculoDaMedia(){
-    for(var contador = 0; contador < quantidadeDeAlunos; contador++){
-       var nota = quantidadeDeAlunos[contador];
-       var notaPorAluno = quantidadeDeAlunos.length;
-       var digit = prompt('nota')
-       var soma = digit + nota
-    }
-    alert(soma)
+
+
+function mediaDaTurma(){
+    var quantidadeDeAlunos = prompt('Quantos alunos possui na sala de aula')
+    var notas = 0
+    var quantidadeDeNotas = [];
     
+    
+    
+   while(notas < quantidadeDeAlunos){
+
+    var nota = parseInt (prompt('Digite as notas de cada Aluno'))
+    quantidadeDeNotas.push(nota)
+    notas++
+
+ }
+ var somar = quantidadeDeNotas.reduce(function(valorAcumulador, valorTotal){
+    return valorAcumulador + valorTotal
+     })
+     var mediaFinalDaTurma = somar/quantidadeDeAlunos
+     console.log(`A media fina da turma é: ${mediaFinalDaTurma}`)
 }
-calculoDaMedia()
+
+
+
+mediaDaTurma()
+
+
+
+
 
 
 
