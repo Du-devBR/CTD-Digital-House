@@ -48,33 +48,106 @@
 // console.log(carro)                                // Temos que colocar 'new' para atribuir o novo valor
 // console.log(new Carro('nissan', 'tiida'))
 
-let contas = {
-    clienteNome:prompt('Nome do cliente'),
-    numeroDaConta:prompt("Qual o numero da conta"),
-    tipoDeConta1: 'corrente',
-    tipoDeConta2: 'poupança',
-    imprimirTipoDeConta: function(valorTipoDeConta) {
-        var modelo = window.confirm('Conta corrente?')
-        if (modelo == true) {
-            return this.tipoDeConta1
+
+// let contas = {
+//     clienteNome:prompt('Nome do cliente'),
+//     numeroDaConta:prompt("Qual o numero da conta"),
+//     tipoDeConta1: 'corrente',
+//     tipoDeConta2: 'poupança',
+//     imprimirTipoDeConta: function(valorTipoDeConta) {
+//         var modelo = window.confirm('Conta corrente?')
+//         if (modelo == true) {
+//             return this.tipoDeConta1
+//         }
+//         else{
+//             return this.tipoDeConta2
+//         }
+//     },
+//     saldo: 0,
+
+
+// }
+
+
+
+function Clientes(valorNome, valorSorenome, ValorConta, valorTipoDeConta, valorSaldo){
+    let nome = valorNome;
+    let sobrenome = valorSorenome;
+    let conta = ValorConta;
+    let tipoDeConta = valorTipoDeConta
+    let saldo = valorSaldo;
+
+    this.addNome = function(){
+        nome = prompt('Digite o nome')
+        return nome;
+    }
+
+    this.addSobrenome = function(){
+        sobrenome = prompt('Digite o sobrenome')
+        return sobrenome;
+    }
+
+    this.addConta = function(){
+        conta = prompt('Digite o numero da conta')
+        return conta;
+    }
+
+    this.addTipoDaConta = function() {
+        let tipoDeConta1 = 'Poupança';
+        let tipoDeConta2 = 'Corrente';
+        tipoDeConta = prompt('Qual o tipo da conta. 1= Poupança; 2= Corrente')
+        if(tipoDeConta==1){
+            return tipoDeConta1
         }
         else{
-            return this.tipoDeConta2
+            return tipoDeConta2;
         }
-    },
-    saldo: 0,
+        
+    }
 
-
+    this.addSaldo = function(){
+        saldo = prompt('Digite o saldo em conta')
+        return saldo;
+    }
+    
+   
 }
 
 
 
+       
+var clientes = new Clientes()
 
 
-console.log(`Titular da Conta: ${contas.clienteNome}`)
-console.log(`Numero da conta: ${contas.numeroDaConta}`)
-console.log(`Tipo da conta: ${contas.imprimirTipoDeConta()}`)
-console.log(`Saldo Autal: ${contas.saldo}`)
+console.log(`Nome do Titular: ${clientes.addNome()} ${clientes.addSobrenome()}`)
+console.log(`Numero da conta: ${clientes.addConta()}`)
+console.log(`Tipo da conta: ${clientes.addTipoDaConta()}`)
+console.log(`Saldo da conta: ${clientes.addSaldo()}`)
+
+
+
+// let json = JSON.stringify(Clientes)
+
+
+
+
+
+
+Clientes()
+
+
+
+
+
+
+
+
+
+
+// console.log(`Titular da Conta: ${contas.clienteNome}`)
+// console.log(`Numero da conta: ${contas.numeroDaConta}`)
+// console.log(`Tipo da conta: ${contas.imprimirTipoDeConta()}`)
+// console.log(`Saldo Autal: ${contas.saldo}`)
 
 
 
