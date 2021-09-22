@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,29 @@
     <title>Aula14</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
             <h1>The Best Doces</h1>
-         </div>
+        </div>
     </header>
     <form>
         <h1>Formulario de compra</h1>
         <h2>Prencha os campos Abaixo</h2>
         <div class="information-input">
-        <div class="name-input">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id= "name" placeholder="Digite seu nome">
-        </div>
-        <div class="email-input">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id= "email" placeholder="E-mail">
-        </div>
-        <div class="phone-input">
-            <label for="phone">Telefone</label>
-            <input type="tel" name="phone" id= "phone" placeholder="(11)00000-0000">
-        </div>
+            <div class="name-input">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="email-input">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" min="@" valid>
+            </div>
+            <div class="phone-input">
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="(11)00000-0000" minlength="14">
+            </div>
         </div>
         <fieldset class="localization">
             <legend>Localização</legend>
@@ -76,7 +78,7 @@
             </div>
             <div class="classificacao-cidades">
                 <label for="city">Cidade</label>
-                <input type="search" list="lista-de-cidades"name="city" id="city">
+                <input type="search" list="lista-de-cidades" name="city" id="city">
                 <datalist id="lista-de-cidades">
                     <option value="Mogi das cruzes">
                     <option value="Campinas">
@@ -92,7 +94,7 @@
                     <option value="Maresias">
                     <option value="Rio Branco">
                     <option value="João Pessoa">
-                    
+
                 </datalist>
             </div>
         </fieldset>
@@ -100,116 +102,116 @@
         <fieldset class="products">
             <legend>Escolha os melhores produtos</legend>
             <div class="products-list">
-            <div class="item-1">
-                <div class="check-title">
-                   <input type="checkbox" name="cake-choco" id="candy-products">
-                   <label for="candy-products">Bolo de chocolate</label>
+                <div class="item-1">
+                    <div class="check-title">
+                        <input type="checkbox" name="cake-choco" id="candy-products">
+                        <label for="candy-products">Bolo de chocolate</label>
+                    </div>
+                    <div class="bg-product">
+                        <img src="./img/bolo de chocolate.jpeg" alt="">
+                    </div>
+                    <div class="products-add">
+                        <div>
+                            <input type="radio" name="cake" id="option-cake1">
+                            <label for="option-cake1">Cobertura de Nutela</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cake" id="option-cake2">
+                            <label for="option-cake2">Pasta Americana</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cake" id="option-cake3">
+                            <label for="option-cake3">Recheio de ninho</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cake" id="option-cake4">
+                            <label for="option-cake4">Brigadeiro</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-product">
-                    <img src="./img/bolo de chocolate.jpeg" alt="">
+                <div class="item-2">
+                    <div class="check-title">
+                        <input type="checkbox" name="pudding" id="pudding-products">
+                        <label for="pudding-products">Pudim</label>
+                    </div>
+                    <div class="bg-product">
+                        <img src="./img/pudin.jpg" alt="">
+                    </div>
+                    <div class="products-add">
+                        <div>
+                            <input type="radio" name="pudding" id="pudding-option1">
+                            <label for="pudding-option1">Cobertura de Nutela</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pudding" id="pudding-option2">
+                            <label for="pudding-option2">Pasta Americana</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pudding" id="pudding-option3">
+                            <label for="pudding-option3">Recheio de ninho</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pudding" id="pudding-option4">
+                            <label for="pudding-option4">Brigadeiro</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="products-add">
-               <div>
-                    <input type="radio" name="cake" id="option-cake1">
-                    <label for="option-cake1">Cobertura de Nutela</label>
+                <div class="item-3">
+                    <div class="check-title">
+                        <input type="checkbox" name="banoffe" id="banoffe-products">
+                        <label for="banoffe-products">Banoffe</label>
+                    </div>
+                    <div class="bg-product">
+                        <img src="./img/banofe.jpeg" alt="">
+                    </div>
+                    <div class="products-add">
+                        <div>
+                            <input type="radio" name="banoffe" id="banoffe-option1">
+                            <label for="banoffe-option1">Cobertura de Nutela</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="banoffe" id="banoffe-option2">
+                            <label for="banoffe-option2">Pasta Americana</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="banoffe" id="banoffe-option3">
+                            <label for="banoffe-option3">Recheio de ninho</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="banoffe" id="banoffe-option4">
+                            <label for="banoffe-option4">Brigadeiro</label>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" name="cake" id="option-cake2">
-                    <label for="option-cake2">Pasta Americana</label>
-                </div>
-                <div>
-                    <input type="radio" name="cake" id="option-cake3">
-                    <label for="option-cake3">Recheio de ninho</label>
-                </div>
-                <div>
-                    <input type="radio" name="cake" id="option-cake4">
-                    <label for="option-cake4">Brigadeiro</label>
-                </div>
+                <div class="item-4">
+                    <div class="check-title">
+                        <input type="checkbox" name="cake-choco" id="pot-cake-products">
+                        <label for="pot-cake-products">Bolo de chocolate</label>
+                    </div>
+                    <div class="bg-product">
+                        <img src="./img/pote de doces.jpg" alt="">
+                    </div>
+                    <div class="products-add">
+                        <div>
+                            <input type="radio" name="pot-cake" id="pot-cake-option1">
+                            <label for="pot-cake-option1">Cobertura de Nutela</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pot-cake" id="pot-cake-option2">
+                            <label for="pot-cake-option2">Pasta Americana</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pot-cake" id="pot-cake-option3">
+                            <label for="pot-cake-option3">Recheio de ninho</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pot-cake" id="pot-cake-option4">
+                            <label for="pot-cake-option4">Brigadeiro</label>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="item-2">
-                <div class="check-title">
-                    <input type="checkbox" name="pudding" id="pudding-products">
-                    <label for="pudding-products">Pudim</label>
-                </div>
-                <div class="bg-product">
-                    <img src="./img/pudin.jpg" alt="">
-                </div>
-                <div class="products-add">
-                 <div>
-                    <input type="radio" name="pudding" id="pudding-option1">
-                    <label for="pudding-option1">Cobertura de Nutela</label>
-                </div>
-                <div>
-                    <input type="radio" name="pudding" id="pudding-option2">
-                    <label for="pudding-option2">Pasta Americana</label>
-                </div>
-                <div>
-                    <input type="radio" name="pudding" id="pudding-option3">
-                    <label for="pudding-option3">Recheio de ninho</label>
-                </div>
-                <div>
-                    <input type="radio" name="pudding" id="pudding-option4">
-                    <label for="pudding-option4">Brigadeiro</label>
-                </div>
-                </div>
-            </div>
-            <div class="item-3">
-                <div class="check-title">
-                    <input type="checkbox" name="banoffe" id="banoffe-products">
-                    <label for="banoffe-products">Banoffe</label>
-                </div>
-                <div class="bg-product">
-                    <img src="./img/banofe.jpeg" alt="">
-                </div>
-                <div class="products-add">
-                <div>
-                    <input type="radio" name="banoffe" id="banoffe-option1">
-                    <label for="banoffe-option1">Cobertura de Nutela</label>
-                </div>
-                <div>
-                    <input type="radio" name="banoffe" id="banoffe-option2">
-                    <label for="banoffe-option2">Pasta Americana</label>
-                </div>
-                <div>
-                    <input type="radio" name="banoffe" id="banoffe-option3">
-                    <label for="banoffe-option3">Recheio de ninho</label>
-                </div>
-                <div>
-                    <input type="radio" name="banoffe" id="banoffe-option4">
-                    <label for="banoffe-option4">Brigadeiro</label>
-                </div>
-                </div>
-            </div>
-            <div class="item-4">
-                <div class="check-title">
-                    <input type="checkbox" name="cake-choco" id="pot-cake-products">
-                    <label for="pot-cake-products">Bolo de chocolate</label>
-                </div>
-                <div class="bg-product">
-                    <img src="./img/pote de doces.jpg" alt="">
-                </div>
-                <div class="products-add">
-                <div>
-                    <input type="radio" name="pot-cake" id="pot-cake-option1">
-                    <label for="pot-cake-option1">Cobertura de Nutela</label>
-                </div>
-                <div>
-                    <input type="radio" name="pot-cake" id="pot-cake-option2">
-                    <label for="pot-cake-option2">Pasta Americana</label>
-                </div>
-                <div>
-                    <input type="radio" name="pot-cake" id="pot-cake-option3">
-                    <label for="pot-cake-option3">Recheio de ninho</label>
-                </div>
-                <div>
-                    <input type="radio" name="pot-cake" id="pot-cake-option4">
-                    <label for="pot-cake-option4">Brigadeiro</label>
-                </div>
-                
-                </div>
-            </div>
-        </div>
         </fieldset>
 
         <fieldset class="payment">
@@ -227,7 +229,8 @@
         <button class="cancel" type="reset">Cancelar</button>
     </form>
 
-  
-  
+
+
 </body>
+
 </html>

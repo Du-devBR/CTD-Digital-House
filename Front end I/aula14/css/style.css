@@ -23,11 +23,15 @@ body {
 
 .logo {
 
+
     width: 100%;
     background-image: linear-gradient(45deg, #7B18F5, white);
     padding: 16px 128px 16px 0;
     box-sizing: border-box;
-  
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
 
 }
 
@@ -53,6 +57,9 @@ form {
     border: none;
     border-radius: 15px;
     box-shadow: 5px 5px 5px whitesmoke;
+    position: relative;
+    top:96px ;
+    z-index: 1;
 
 }
 
@@ -90,13 +97,37 @@ form h2 {
 
     width: 100%;
     margin: 8px 0;
-    border: solid 1px rgb(151, 171, 151) ;
+    border: solid 1px #97ab97 ;
     border-radius: 15px;
     padding: 5px 16px;
     box-sizing: border-box;
-    font-size: 14px;color: #111111;
+    font-size: 14px;
+    color: #111111;
+    transition: all .5s;
 
 }
+
+.information-input input:focus {
+
+    transform: translateY(-10px);
+    background-color:#e6e6e68c ;
+
+}
+
+.email-input input:invalid {
+
+    border: solid 1px #f50a0a;
+    background-color: #f50a0a1a;
+    transition: 0.5s;
+}
+
+.phone-input input:invalid {
+
+    border: solid 1px #f50a0a;
+    background-color: #f50a0a1a;
+    transition: 0.5s;
+}
+
 
 #phone {
     display: block;
@@ -165,7 +196,7 @@ form h2 {
 .products-list {
 
     margin: 32px 0;
-    
+
 }
 
 .check-title input {
@@ -181,17 +212,17 @@ form h2 {
 
     font-size: 18px;
     font-weight: bold;
-    position: relative; 
-    margin: 2px 41px;   
+    position: relative;
+    margin: 2px 41px;
     top: 2px;
-    
+
 }
 
 .bg-product {
 
     margin: 0 auto;
     width: 200px;
-    
+
 }
 
 .bg-product img {
@@ -201,7 +232,7 @@ form h2 {
     width: 200px;
     height: 100px;
     box-shadow: 5px 10px 15px #111111;
-    
+
 }
 
 .products-add {
@@ -216,7 +247,7 @@ form h2 {
     width: 18px;
     height: 18px;
     position: absolute;
-    
+
 
 }
 
@@ -234,7 +265,7 @@ form h2 {
     background-color: #E6E6E6;
     border-radius: 16px;
     padding: 16px;
-    
+
 }
 
 .item-2 {
@@ -243,7 +274,7 @@ form h2 {
     background-color: #f3f0f0;
     border-radius: 16px;
     padding: 16px;
-    
+
 }
 
 .item-3 {
@@ -252,7 +283,7 @@ form h2 {
     background-color: #E6E6E6;
     border-radius: 16px;
     padding: 16px;
-    
+
 }
 
 .item-4 {
@@ -261,7 +292,7 @@ form h2 {
     background-color: #f3f0f0;
     border-radius: 16px;
     padding: 16px;
-    
+
 }
 
 .payment {
@@ -294,7 +325,7 @@ button {
     text-transform: uppercase;
     border: none;
     border-radius: 30px;
-    
+
 
 }
 
@@ -306,6 +337,7 @@ button {
     background-color: transparent;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: 0.5s;
 
 }
 
@@ -313,14 +345,14 @@ button {
 
     color: white;
     background-color: #7B18F5;
-    border: none;
-    padding: 10px 34px;
+
 }
 
 .cancel {
 
     color: rgb(151, 161, 151);
     background-color: rgb(247, 243, 243);
+    transition: 0.5s;
 }
 
 .cancel:hover {
@@ -328,22 +360,5 @@ button {
     color: white;
     background-color: red;
     border: none;
-   
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
