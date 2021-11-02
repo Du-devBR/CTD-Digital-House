@@ -70,52 +70,52 @@
 
 
 
-function Clientes(valorNome, valorSorenome, ValorConta, valorTipoDeConta, valorSaldo){
+function Clientes(valorNome, valorSorenome, ValorConta, valorTipoDeConta, valorSaldo) {
     let nome = valorNome;
     let sobrenome = valorSorenome;
     let conta = ValorConta;
     let tipoDeConta = valorTipoDeConta
     let saldo = valorSaldo;
 
-    this.addNome = function(){
+    this.addNome = function () {
         nome = prompt('Digite o nome')
         return nome;
     }
 
-    this.addSobrenome = function(){
+    this.addSobrenome = function () {
         sobrenome = prompt('Digite o sobrenome')
         return sobrenome;
     }
 
-    this.addConta = function(){
+    this.addConta = function () {
         conta = prompt('Digite o numero da conta')
         return conta;
     }
 
-    this.addTipoDaConta = function() {
+    this.addTipoDaConta = function () {
         let tipoDeConta1 = 'Poupança';
         let tipoDeConta2 = 'Corrente';
         tipoDeConta = prompt('Qual o tipo da conta. 1= Poupança; 2= Corrente')
-        if(tipoDeConta==1){
+        if (tipoDeConta == 1) {
             return tipoDeConta1
         }
-        else{
+        else {
             return tipoDeConta2;
         }
-        
+
     }
 
-    this.addSaldo = function(){
+    this.addSaldo = function () {
         saldo = prompt('Digite o saldo em conta')
         return saldo;
     }
-    
-   
+
+
 }
 
 
 
-       
+
 var clientes = new Clientes()
 
 
@@ -148,7 +148,3 @@ Clientes()
 // console.log(`Numero da conta: ${contas.numeroDaConta}`)
 // console.log(`Tipo da conta: ${contas.imprimirTipoDeConta()}`)
 // console.log(`Saldo Autal: ${contas.saldo}`)
-
-
-
-
